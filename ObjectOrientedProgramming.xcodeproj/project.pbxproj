@@ -14,6 +14,7 @@
 		E488FB031AE5449500C88312 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E488FB021AE5449500C88312 /* Images.xcassets */; };
 		E488FB061AE5449500C88312 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E488FB041AE5449500C88312 /* LaunchScreen.xib */; };
 		E488FB121AE5449500C88312 /* ObjectOrientedProgrammingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E488FB111AE5449500C88312 /* ObjectOrientedProgrammingTests.m */; };
+		E488FB201AE5471A00C88312 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = E488FB1F1AE5471A00C88312 /* Recipe.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		E488FAF71AE5449500C88312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E488FAF91AE5449500C88312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E488FAFA1AE5449500C88312 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E488FAFC1AE5449500C88312 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E488FAFD1AE5449500C88312 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E488FAFC1AE5449500C88312 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ObjectOrientedProgramming/ViewController.h; sourceTree = "<group>"; };
+		E488FAFD1AE5449500C88312 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ObjectOrientedProgramming/ViewController.m; sourceTree = "<group>"; };
 		E488FB001AE5449500C88312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E488FB021AE5449500C88312 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E488FB051AE5449500C88312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E488FB0B1AE5449500C88312 /* ObjectOrientedProgrammingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectOrientedProgrammingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E488FB101AE5449500C88312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E488FB111AE5449500C88312 /* ObjectOrientedProgrammingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectOrientedProgrammingTests.m; sourceTree = "<group>"; };
+		E488FB1E1AE5471A00C88312 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		E488FB1F1AE5471A00C88312 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,9 @@
 		E488FAE91AE5449500C88312 = {
 			isa = PBXGroup;
 			children = (
+				E488FB1B1AE544CB00C88312 /* Model */,
+				E488FB1C1AE544D000C88312 /* View */,
+				E488FB1D1AE544D500C88312 /* Controller */,
 				E488FAF41AE5449500C88312 /* ObjectOrientedProgramming */,
 				E488FB0E1AE5449500C88312 /* ObjectOrientedProgrammingTests */,
 				E488FAF31AE5449500C88312 /* Products */,
@@ -83,8 +89,6 @@
 			children = (
 				E488FAF91AE5449500C88312 /* AppDelegate.h */,
 				E488FAFA1AE5449500C88312 /* AppDelegate.m */,
-				E488FAFC1AE5449500C88312 /* ViewController.h */,
-				E488FAFD1AE5449500C88312 /* ViewController.m */,
 				E488FAFF1AE5449500C88312 /* Main.storyboard */,
 				E488FB021AE5449500C88312 /* Images.xcassets */,
 				E488FB041AE5449500C88312 /* LaunchScreen.xib */,
@@ -117,6 +121,31 @@
 				E488FB101AE5449500C88312 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E488FB1B1AE544CB00C88312 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E488FB1E1AE5471A00C88312 /* Recipe.h */,
+				E488FB1F1AE5471A00C88312 /* Recipe.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E488FB1C1AE544D000C88312 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E488FB1D1AE544D500C88312 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E488FAFC1AE5449500C88312 /* ViewController.h */,
+				E488FAFD1AE5449500C88312 /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +251,7 @@
 				E488FAFE1AE5449500C88312 /* ViewController.m in Sources */,
 				E488FAFB1AE5449500C88312 /* AppDelegate.m in Sources */,
 				E488FAF81AE5449500C88312 /* main.m in Sources */,
+				E488FB201AE5471A00C88312 /* Recipe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

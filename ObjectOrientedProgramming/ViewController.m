@@ -17,6 +17,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _myRecipe = [[Recipe alloc]init];
+    _myRecipe.cookTime = @15.00;
+    _myRecipe.recipeName = @"Burger";
+    _myRecipe.recipeType = @"Meat";
+    
+    Recipe *recipe2 = [[Recipe alloc]init];
+    recipe2.cookTime = @10;
+    recipe2.recipeName = @"Brownies";
+    recipe2.recipeType = @"Baking";
+    
+    Recipe *recipeParam = [[Recipe alloc]initWithParameters:@"Pasta" recipetype:@"Healthy" cooktime:@5.00];
+    
 }
 
 - (void)didReceiveMemoryWarning {
